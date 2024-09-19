@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS dim_dates (
+    id SERIAL,
+    date DATE NOT NULL,
+    day SMALLINT NOT NULL,
+    month SMALLINT NOT NULL,
+    year SMALLINT NOT NULL,
+    created_on TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_on TIMESTAMP NOT NULL DEFAULT NOW(),
+    PRIMARY KEY(id)
+);
